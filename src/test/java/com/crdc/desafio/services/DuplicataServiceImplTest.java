@@ -13,7 +13,10 @@ public class DuplicataServiceImplTest {
 	}
 	
 	private UploadFileDTO mockUploadFileDTO() {
-		UploadFileDTO dto = new UploadFileDTO();
+
+		UploadFileDTO dto = new UploadFileDTO();		
+		String arquivo = "MDAxRW1wcmVzYSBBICAgICAgICAgICAgICAxOTAwMDEwMDAwMDEwMDAwICAgICAgICAgIEVtcHJlc2EgQQowMDJDMTAwMDAwMDAwMTAwMDAwMDAwMDEyMzQ1NjAwMDAwMTIzNDUKMDAyRDIwMDAwMDAwMDIwMDAwMDAwMDAxMjM0NTYxMjM0NTYwMAowMDJUMzAwMDAwMDAwMzAwMDAwMDAwMDEyMzQ1NjIzNDU2Nzg5CjAwMw==";
+		dto.setFile(arquivo.getBytes());
 		
 		
 		return dto;		
